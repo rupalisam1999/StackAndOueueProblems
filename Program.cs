@@ -22,6 +22,9 @@ namespace StackAndQueueProblems
             linkListQueue.Enqueue(30);
             linkListQueue.Enqueue(70);
             linkListQueue.Display();
+            Console.WriteLine("\n After Deque remaining elements is = ");
+            linkListQueue.Display();
+            linkListQueue.Display();
         }
 
     }

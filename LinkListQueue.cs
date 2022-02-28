@@ -29,6 +29,17 @@ namespace StackAndQueueProblems
             }
             Console.WriteLine("\n inserted into queue" + node.data);
         }
+        internal void Dequeue()
+        {
+            if (this.head == null)
+            {
+                Console.WriteLine("Queue is empty");
+            }
+            else
+            {
+                head = head.next;
+            }
+        }
 
        
         internal void Display()
@@ -47,5 +58,6 @@ namespace StackAndQueueProblems
         }
     }
 }
-    
+
+
 
