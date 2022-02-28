@@ -31,8 +31,38 @@ namespace StackAndQueueProblems
             this.top = node;
             Console.WriteLine(value);
         }
+        internal void peek()
+        {
+            if (this.top == null)
+            {
+                Console.WriteLine("stack is empty");
+            }
+            Console.WriteLine("\n is in the top of stack = " + this.top.data);
+        }
 
        
+        internal void pop()
+        {
+            if (this.top == null)
+            {
+                Console.WriteLine("stack is empty \n deletion is not possible");
+            }
+            Console.WriteLine("\n Pop out elememnt is = " + this.top.data);
+            this.top = this.top.next;
+        }
+
+       
+        internal void isEmpty()
+        {
+            while (this.top != null)
+            {
+                peek();
+                pop();
+            }
+            Console.WriteLine("Stack is empty");
+        }
+
+
         internal void Display()
         {
             Node temp = this.top;
