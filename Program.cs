@@ -17,6 +17,12 @@ namespace StackAndQueueProblems
             linkedListStack.Display();
             linkedListStack.isEmpty();
             linkedListStack.Display();
+            LinkListQueue linkListQueue = new LinkListQueue();
+            linkListQueue.Enqueue(56);
+            linkListQueue.Enqueue(30);
+            linkListQueue.Enqueue(70);
+            linkListQueue.Display();
         }
+
     }
 }
